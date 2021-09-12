@@ -96,7 +96,7 @@ a:active {
 /* The whole timeline */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 1450px;
   margin: 0 auto;
 }
 
@@ -195,9 +195,26 @@ a:active {
   border-radius: 0px 0px 10px 10px;
 }
 
+.github-logo {
+  height: 45px;
+}
+
+.tool-container {
+  padding: 8px;
+  display: inline-block;
+  min-width: 90px;
+}
+
+.tool-container p {
+  text-align: center;
+  font-size: 15px;
+}
+
 .tool-logo {
-  height: 50px;
-  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 45px;
 }
 
 /* Responsive timeline on screens less than 600px wide */
