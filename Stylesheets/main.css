@@ -1,5 +1,7 @@
 :root {
   --black: #2b2b2b;
+  --light-blue: #00B0F0;
+  --dark-black: #0a0a0a;
 }
 
 /** Custom fonts **/
@@ -60,6 +62,11 @@ a:active {
   color: purple;
 }
 
+span {
+  color: purple;
+  font-weight: bold;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -107,7 +114,7 @@ a:active {
   width: 6px;
   background-color: white;
   top: 20px;
-  bottom: 140px;
+  bottom: 0px;
   left: 50%;
   margin-left: -3px;
 }
@@ -172,6 +179,32 @@ a:active {
   border-color: transparent purple transparent transparent;
 }
 
+.light-blue-container-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--light-blue);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--light-blue) transparent transparent;
+}
+
+.black-container-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid purple;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--dark-black);
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -184,6 +217,22 @@ a:active {
   top: -20px;
   border-radius: 10px 10px 0px 0px;
   color: white;
+}
+
+.light-blue-header {
+  background-color: var(--light-blue);
+}
+
+.black-header {
+  background-color: var(--dark-black);
+}
+
+.light-blue {
+  color: var(--light-blue);
+}
+
+.black {
+  color: var(--dark-black);
 }
 
 /* The actual content */
@@ -217,8 +266,7 @@ a:active {
   height: 45px;
 }
 
-/* Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
