@@ -1,0 +1,224 @@
+:root {
+  --black: #2b2b2b;
+}
+
+/** Custom fonts **/
+@font-face {
+  font-family: m20;
+  src: url('../Assets/Fonts/m20_sp_ranker/m20.TTF');
+}
+
+@font-face {
+  font-family: pumpkin_cheesecake;
+  src: url('../Assets/Fonts/pumpkin_cheesecake/PumpkinCheesecake.otf');
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: auto;
+  font-family: highpixel;
+  font-size: 18px;
+  background-color: var(--black);
+}
+
+h1 {
+  font-family: m20;
+  font-size: 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: pumpkin_cheesecake;
+  font-size: 25px;
+  font-weight: none;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* Hyperlinks */
+a {
+  color: black;
+}
+
+a:hover {
+  color: #78960e;
+}
+
+a:active {
+  color: purple;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, white, grey);
+  border-radius: 10px;
+}
+
+/* WebKit and Blink browsers text selection */
+::selection {
+  background: var(--lightpurple);
+  color: black;
+}
+
+/* Gecko Browsers text selection */
+::-moz-selection {
+  background: var(--lightpurple);
+  color: black;
+}
+
+.title {
+  position: relative;
+  top: -20px;
+  padding: 30px;
+  color: white;
+}
+
+/* The whole timeline */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Timeline bar */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 20px;
+  bottom: 140px;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid purple;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent purple;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid purple;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent purple transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+.header {
+  background-color: purple;
+  padding: 20px;
+  position: relative;
+  top: -20px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+}
+
+/* The actual content */
+.content {
+  padding: 3px 20px;
+  background-color: white;
+  position: relative;
+  top: -42px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid purple;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent purple transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
