@@ -244,6 +244,10 @@ span {
   border-radius: 0px 0px 10px 10px;
 }
 
+.project-1 {
+  margin-bottom: -330px;
+}
+
 .github-logo {
   height: 45px;
 }
@@ -277,6 +281,7 @@ span {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
+  margin-bottom: 0px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
