@@ -341,16 +341,29 @@ video {
 
 .icon-text {
   padding-left: 43px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  margin-right: 0;
 }
 
 .centered {
   text-align: center;
 }
 
+.centered-div {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: -17px;
+}
+
 .tool-container {
   padding: 8px;
   display: inline-block;
   min-width: 90px;
+  margin-top: -7px;
 }
 
 .tool-container p {
@@ -365,7 +378,7 @@ video {
   height: 45px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 880px) {
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
