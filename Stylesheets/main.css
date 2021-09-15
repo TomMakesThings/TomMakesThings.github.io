@@ -326,8 +326,25 @@ video {
   margin-bottom: -620px;
 }
 
-.github-logo {
-  height: 45px;
+.icon-container {
+  position: relative;
+}
+
+.icon {
+  height: 30px;
+  float: left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.icon-text {
+  padding-left: 43px;
+}
+
+.centered {
+  text-align: center;
 }
 
 .tool-container {
