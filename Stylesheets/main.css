@@ -3,6 +3,7 @@
   --light-blue: #00B0F0;
   --dark-black: #0a0a0a;
   --surrey-blue: #002868;
+  --orange: #ff6608;
   --dark-blue: #0505FF;
 }
 
@@ -237,6 +238,19 @@ video {
   border-color: transparent transparent transparent red;
 }
 
+.project5::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--orange);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--orange) transparent transparent;
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -267,6 +281,10 @@ video {
   background-color: red;
 }
 
+.project5-header {
+  background-color: var(--orange);
+}
+
 .project1-span {
   color: var(--light-blue);
 }
@@ -281,6 +299,10 @@ video {
 
 .project4-span {
   color: red;
+}
+
+.project5-span {
+  color: var(--orange);
 }
 
 /* The actual content */
@@ -371,9 +393,16 @@ video {
 
   .project4::before {
     left: 60px;
-    border: medium red;
+    border: medium solid red;
     border-width: 10px 10px 10px 0;
     border-color: transparent red transparent transparent;
+  }
+
+  .project5::before {
+    left: 60px;
+    border: medium solid var(--orange);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--orange) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
