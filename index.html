@@ -21,6 +21,37 @@
   <h1 class="title">Project Timeline</h1>
 
   <div class="timeline">
+    <div class="container right stan-mm">
+      <h2 class="header stan-mm-header">Stan Mixture Model (2021)</h2>
+      <div class="content">
+        <p>During a research intership, I made a prototype for a new mixture model to detect differential expression in scRNA-seq data.
+        For this I used Stan's automatic variational inference algorithm to model the posterior distribution of inter-individual differences from the grand means of genes.</p>
+        <p class="centered"><span class="stan-mm-span">GitHub Repository (Private):</span></p>
+        <div class="centered-div">
+          <div class="icon-container">
+            <a href="https://github.com/tt104/Stan-Bayesian-Mixed-Model" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="Assets/Images/GitHub-Logo.png">
+              <p class="icon-text">Stan-Bayesian-Mixed-Model (tt104)</p>
+            </a>
+          </div>
+        </div>
+        <div class="centered">
+          <p class="centered"><span class="stan-mm-span">Languages and Tools:</span></p>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/R-Logo.png">
+            <p>R</p>
+          </div>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/Stan-Logo.png">
+            <p>Stan</p>
+          </div>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/RStudio-Logo.png">
+            <p>RStudio</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container left plasmid">
       <h2 class="header plasmid-header">PLASMID (2021)</h2>
       <div class="content">
@@ -30,12 +61,12 @@
           Multiple interactive graphs are produced to compare the methods against a ground truth and to identify up and down regulated genes.</p>
         <p class="centered"><span class="plasmid-span">Publication:</span></p>
         <p class="centered"><i>Not yet avaliable</i></p>
-        <p class="centered"><span class="plasmid-span">GitHub Repository:</span></p>
+        <p class="centered"><span class="plasmid-span">GitHub Repository (Private):</span></p>
         <div class="centered-div">
           <div class="icon-container">
-            <a href="https://github.com/TomMakesThings/scRNA-seq-DE-Benchmarking" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/TomMakesThings/PLASMID" target="_blank" rel="noopener noreferrer">
               <img class="icon" src="Assets/Images/GitHub-Logo.png">
-              <p class="icon-text">scRNA-seq-DE-Benchmarking (TomMakesThings)</p>
+              <p class="icon-text">PLASMID (TomMakesThings)</p>
             </a>
           </div>
         </div>
@@ -48,10 +79,6 @@
           <div class="tool-container">
             <img class="tool-logo" src="Assets/Images/Python-Logo.png">
             <p>Python</p>
-          </div>
-          <div class="tool-container">
-            <img class="tool-logo" src="Assets/Images/Stan-Logo.png">
-            <p>Stan</p>
           </div>
           <div class="tool-container">
             <img class="tool-logo" src="Assets/Images/YAML-Logo.png" style="height: 30px;">
@@ -227,8 +254,14 @@
     <div class="container left ecg-classifier">
       <h2 class="header ecg-classifier-header">Semi-Supervised Learning with TCNs for ECG Classification (2021)</h2>
       <div class="content">
-        <p>In a degree project, in which I was project manager, we experimented with semi-supervised learning and TCNs to identify five types of arrhythmias from ECG time-series.
-          Our final model achieved 97% accuracy and I lead the presentation of our academic poster.</p>
+        <p>I managed a degree project in which we experimented using a new semi-supervised learning approach to identify arrhythmia (a type of heart
+          condition) given ECG time-series data.</p>
+        <p>First we applied k-means clustering to create new labels for each ECG, and then used them to train a temporal convolutional network (TCN).
+          Then we employed transfer learning to create a new network for classifying the original arrhythmia labels.</p>
+        <p>Though unfortunately transferring network weigths did not make a significant distance compared to training the network without, we still
+          consider the project a success;
+          Our final model achieved 97% accuracy demonstrating TCNs to much more suitable for time series ECGs than CNNs or LSTMs as used in previous literature.
+          </p>
         <video autoplay muted loop>
           <source src="Assets/Videos/ECG-Classifier.mp4" type="video/mp4">
         </video>

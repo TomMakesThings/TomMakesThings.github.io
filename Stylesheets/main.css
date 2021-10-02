@@ -7,6 +7,9 @@
   --dark-blue: #0505FF;
   --purple: #4100BD;
   --red: #ED1515;
+  --green: #3CA811;
+  --stan-red: #B2001D;
+  --gold: #FFBA21;
 }
 
 /** Custom fonts **/
@@ -238,9 +241,9 @@ video {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid green;
+  border: medium solid var(--gold);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent green;
+  border-color: transparent transparent transparent var(--gold);
 }
 
 .vigenere-cracker::before {
@@ -282,6 +285,32 @@ video {
   border-color: transparent var(--red) transparent transparent;
 }
 
+.clustering-tda::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--green);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--green);
+}
+
+.stan-mm::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--stan-red);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--stan-red) transparent transparent;
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -309,7 +338,7 @@ video {
 }
 
 .sinhala-ocr-header {
-  background-color: green;
+  background-color: var(--gold);
 }
 
 .vigenere-cracker-header {
@@ -322,6 +351,14 @@ video {
 
 .genre-predictor-header {
   background-color: var(--red);
+}
+
+.clustering-tda-header {
+  background-color: var(--green);
+}
+
+.stan-mm-header {
+  background-color: var(--stan-red);
 }
 
 .obstacle-course-span {
@@ -337,7 +374,7 @@ video {
 }
 
 .sinhala-ocr-span {
-  color: green;
+  color: var(--gold);
 }
 
 .vigenere-cracker-span {
@@ -350,6 +387,14 @@ video {
 
 .genre-predictor-span {
   color: var(--red);
+}
+
+.clustering-tda-span {
+  color: var(--green);
+}
+
+.stan-mm-span {
+  color: var(--stan-red);
 }
 
 /* The actual content */
@@ -474,9 +519,9 @@ video {
 
   .sinhala-ocr::before {
     left: 60px;
-    border: medium solid green;
+    border: medium solid var(--gold);
     border-width: 10px 10px 10px 0;
-    border-color: transparent green transparent transparent;
+    border-color: transparent var(--gold) transparent transparent;
   }
 
   .vigenere-cracker::before {
@@ -498,6 +543,20 @@ video {
     border: medium solid var(--red);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--red) transparent transparent;
+  }
+
+  .clustering-tda::before {
+    left: 60px;
+    border: medium solid var(--green);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--green) transparent transparent;
+  }
+
+  .stan-mm::before {
+    left: 60px;
+    border: medium solid var(--stan-red);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--stan-red) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
