@@ -5,6 +5,8 @@
   --surrey-blue: #002868;
   --orange: #ff6608;
   --dark-blue: #0505FF;
+  --purple: #4100BD;
+  --red: #ED1515;
 }
 
 /** Custom fonts **/
@@ -71,7 +73,10 @@ span {
 }
 
 video {
-  width: 100%
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
 }
 
 /* Custom scrollbar */
@@ -186,7 +191,7 @@ video {
   border-color: transparent purple transparent transparent;
 }
 
-.project1::before {
+.obstacle-course::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -199,7 +204,7 @@ video {
   border-color: transparent var(--light-blue) transparent transparent;
 }
 
-.project2::before {
+.wrench-mask::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -212,7 +217,7 @@ video {
   border-color: transparent transparent transparent var(--dark-black);
 }
 
-.project3::before {
+.subs::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -225,7 +230,7 @@ video {
   border-color: transparent var(--surrey-blue) transparent transparent;
 }
 
-.project4::before {
+.sinhala-ocr::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -233,12 +238,12 @@ video {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid red;
+  border: medium solid green;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent red;
+  border-color: transparent transparent transparent green;
 }
 
-.project5::before {
+.vigenere-cracker::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -249,6 +254,32 @@ video {
   border: medium solid var(--orange);
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--orange) transparent transparent;
+}
+
+.ecg-classifier::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--purple);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--purple);
+}
+
+.genre-predictor::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--red);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--red) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -265,44 +296,60 @@ video {
   color: white;
 }
 
-.project1-header {
+.obstacle-course-header {
   background-color: var(--light-blue);
 }
 
-.project2-header {
+.wrench-mask-header {
   background-color: var(--dark-black);
 }
 
-.project3-header {
+.subs-header {
   background-color: var(--surrey-blue);
 }
 
-.project4-header {
-  background-color: red;
+.sinhala-ocr-header {
+  background-color: green;
 }
 
-.project5-header {
+.vigenere-cracker-header {
   background-color: var(--orange);
 }
 
-.project1-span {
+.ecg-classifier-header {
+  background-color: var(--purple);
+}
+
+.genre-predictor-header {
+  background-color: var(--red);
+}
+
+.obstacle-course-span {
   color: var(--light-blue);
 }
 
-.project2-span {
+.wrench-mask-span {
   color: var(--dark-black);
 }
 
-.project3-span {
+.subs-span {
   color: var(--surrey-blue);
 }
 
-.project4-span {
-  color: red;
+.sinhala-ocr-span {
+  color: green;
 }
 
-.project5-span {
+.vigenere-cracker-span {
   color: var(--orange);
+}
+
+.ecg-classifier-span {
+  color: var(--purple);
+}
+
+.genre-predictor-span {
+  color: var(--red);
 }
 
 /* The actual content */
@@ -314,16 +361,20 @@ video {
   border-radius: 0px 0px 10px 10px;
 }
 
-.project2 {
+.wrench-mask {
   margin-bottom: -500px;
 }
 
-.project3 {
+.subs {
   margin-bottom: -350px;
 }
 
-.project4 {
+.sinhala-ocr {
   margin-bottom: -620px;
+}
+
+.vigenere-cracker {
+  margin-bottom: -240px;
 }
 
 .icon-container {
@@ -400,39 +451,53 @@ video {
   border-color: transparent purple transparent transparent;
   }
 
-  .project1::before {
+  .obstacle-course::before {
     left: 60px;
     border: medium solid var(--light-blue);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--light-blue) transparent transparent;
   }
 
-  .project2::before {
+  .wrench-mask::before {
     left: 60px;
     border: medium solid var(--dark-black);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--dark-black) transparent transparent;
   }
 
-  .project3::before {
+  .subs::before {
     left: 60px;
     border: medium solid var(--surrey-blue);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--surrey-blue) transparent transparent;
   }
 
-  .project4::before {
+  .sinhala-ocr::before {
     left: 60px;
-    border: medium solid red;
+    border: medium solid green;
     border-width: 10px 10px 10px 0;
-    border-color: transparent red transparent transparent;
+    border-color: transparent green transparent transparent;
   }
 
-  .project5::before {
+  .vigenere-cracker::before {
     left: 60px;
     border: medium solid var(--orange);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--orange) transparent transparent;
+  }
+
+  .ecg-classifier::before {
+    left: 60px;
+    border: medium solid var(--purple);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--purple) transparent transparent;
+  }
+
+  .genre-predictor::before {
+    left: 60px;
+    border: medium solid var(--red);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--red) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
