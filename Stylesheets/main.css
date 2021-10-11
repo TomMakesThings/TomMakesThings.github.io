@@ -632,9 +632,9 @@ video {
 
   .clustering-tda::before {
     left: 60px;
-    border: medium solid var(--plasmid-pink);
+    border: medium solid var(--green);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--plasmid-pink) transparent transparent;
+    border-color: transparent var(--green) transparent transparent;
   }
 
   .bayesian-mm::before {
@@ -646,9 +646,9 @@ video {
 
   .plasmid::before {
     left: 60px;
-    border: medium solid var(--green);
+    border: medium solid var(--plasmid-pink);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--green) transparent transparent;
+    border-color: transparent var(--plasmid-pink) transparent transparent;
   }
 
   .stan-mm::before {
