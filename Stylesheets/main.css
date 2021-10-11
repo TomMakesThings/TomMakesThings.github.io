@@ -481,23 +481,43 @@ video {
 }
 
 .sinhala-ocr {
-  margin-bottom: -750px;
+  margin-bottom: -770px;
 }
 
 .vigenere-cracker {
-  margin-bottom: -130px;
+  margin-bottom: -80px;
 }
 
 .nsga-ii {
-  margin-bottom: -240px;
+  margin-bottom: -580px;
 }
 
 .ga-nn {
-  margin-bottom: -400px;
+  margin-bottom: -40px;
 }
 
 .ecg-classifier {
-  margin-bottom: -300px;
+  margin-bottom: -650px;
+}
+
+.genre-predictor {
+  margin-bottom: -540px;
+}
+
+.clustering-tda {
+  margin-bottom: -500px;
+}
+
+.bayesian-mm {
+  margin-bottom: -600px;
+}
+
+.plasmid {
+  margin-bottom: -420px;
+}
+
+.stan-mm {
+  margin-bottom: -760px;
 }
 
 .icon-container {
