@@ -11,6 +11,7 @@
   --stan-red: #B2001D;
   --gold: #FFBA21;
   --light-orange: #ff931f;
+  --plasmid-pink: #fc495e;
 }
 
 /** Custom fonts **/
@@ -312,6 +313,19 @@ video {
   border-color: transparent var(--light-orange) transparent transparent;
 }
 
+.plasmid::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--plasmid-pink);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--plasmid-pink);
+}
+
 .stan-mm::before {
   content: " ";
   height: 0;
@@ -375,6 +389,10 @@ video {
   background-color: var(--light-orange);
 }
 
+.plasmid-header {
+  background-color: var(--plasmid-pink);
+}
+
 .stan-mm-header {
   background-color: var(--stan-red);
 }
@@ -413,6 +431,10 @@ video {
 
 .bayesian-mm-span {
   color: var(--light-orange);
+}
+
+.plasmid-span {
+  color: var(--plasmid-pink);
 }
 
 .stan-mm-span {
@@ -569,9 +591,9 @@ video {
 
   .clustering-tda::before {
     left: 60px;
-    border: medium solid var(--green);
+    border: medium solid var(--plasmid-pink);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--green) transparent transparent;
+    border-color: transparent var(--plasmid-pink) transparent transparent;
   }
 
   .bayesian-mm::before {
@@ -579,6 +601,13 @@ video {
     border: medium solid var(--light-orange);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--light-orange) transparent transparent;
+  }
+
+  .plasmid::before {
+    left: 60px;
+    border: medium solid var(--green);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--green) transparent transparent;
   }
 
   .stan-mm::before {
