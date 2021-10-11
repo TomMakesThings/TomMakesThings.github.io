@@ -12,6 +12,7 @@
   --gold: #FFBA21;
   --light-orange: #ff931f;
   --plasmid-pink: #fc495e;
+  --bright-pink: #ff0df7;
 }
 
 /** Custom fonts **/
@@ -274,6 +275,19 @@ video {
   border-color: transparent transparent transparent var(--purple);
 }
 
+.nsga-ii::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--bright-pink);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--bright-pink);
+}
+
 .genre-predictor::before {
   content: " ";
   height: 0;
@@ -377,6 +391,10 @@ video {
   background-color: var(--purple);
 }
 
+.nsga-ii-header {
+  background-color: var(--bright-pink);
+}
+
 .genre-predictor-header {
   background-color: var(--red);
 }
@@ -421,6 +439,10 @@ video {
   color: var(--purple);
 }
 
+.nsga-ii-span {
+  color: var(--bright-pink);
+}
+
 .genre-predictor-span {
   color: var(--red);
 }
@@ -459,11 +481,23 @@ video {
 }
 
 .sinhala-ocr {
-  margin-bottom: -620px;
+  margin-bottom: -750px;
 }
 
 .vigenere-cracker {
+  margin-bottom: -130px;
+}
+
+.nsga-ii {
   margin-bottom: -240px;
+}
+
+.ga-nn {
+  margin-bottom: -400px;
+}
+
+.ecg-classifier {
+  margin-bottom: -300px;
 }
 
 .icon-container {
@@ -580,6 +614,13 @@ video {
     border: medium solid var(--purple);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--purple) transparent transparent;
+  }
+
+  .nsga-ii::before {
+    left: 60px;
+    border: medium solid var(--bright-pink);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--bright-pink) transparent transparent;
   }
 
   .genre-predictor::before {
