@@ -60,9 +60,10 @@
       <div class="content">
         <p>During an internship, I worked in collaboration with UK DIR Imperial College London to benchmark pseudobulk, pseudoreplicate
           and mixture model methods for identifying differentially expressed genes in microglia.</p>
-        <p>My contribution was creating PLASMID - a parallelizable Snakemake pipeline that allows you to input scRNA-seq data and performs variations of the following differential expression methods:
-          DESeq2, edgeR, limma, Welch and Wilcoxon t-tests, MAST and NEBULA.
-          Multiple interactive graphs are produced to compare the methods against a ground truth and to identify up and down regulated genes.</p>
+        <p>My contribution was creating PLASMID - a parallelizable Snakemake pipeline to run multiple differential expression methods and their variations (41 total) given input scRNA-seq data.
+          Supported methods include: DESeq2, edgeR, limma, Welch and Wilcoxon t-tests, MAST and NEBULA.</p>
+        <p>After running each method, log fold-change and adjusted p-values are outputted and interactive graphs are produced.
+          These allow a user to visually identify up and down regulated genes and compare the methods against an expected ground truth.</p>
         <p class="centered"><span class="plasmid-span">Publication:</span></p>
         <p class="centered"><i>Not yet avaliable</i></p>
         <p class="centered"><span class="plasmid-span">GitHub Repository (Private):</span></p>

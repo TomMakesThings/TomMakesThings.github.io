@@ -10,6 +10,7 @@
   --green: #3CA811;
   --stan-red: #B2001D;
   --gold: #FFBA21;
+  --light-orange: #ff931f;
 }
 
 /** Custom fonts **/
@@ -298,6 +299,19 @@ video {
   border-color: transparent transparent transparent var(--green);
 }
 
+.baysian-mm::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--light-orange);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--light-orange) transparent transparent;
+}
+
 .stan-mm::before {
   content: " ";
   height: 0;
@@ -357,6 +371,10 @@ video {
   background-color: var(--green);
 }
 
+.baysian-mm-header {
+  background-color: var(--light-orange);
+}
+
 .stan-mm-header {
   background-color: var(--stan-red);
 }
@@ -391,6 +409,10 @@ video {
 
 .clustering-tda-span {
   color: var(--green);
+}
+
+.baysian-mm-span {
+  color: var(--light-orange);
 }
 
 .stan-mm-span {
@@ -550,6 +572,13 @@ video {
     border: medium solid var(--green);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--green) transparent transparent;
+  }
+
+  .baysian-mm::before {
+    left: 60px;
+    border: medium solid var(--light-orange);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--light-orange) transparent transparent;
   }
 
   .stan-mm::before {
