@@ -299,7 +299,7 @@ video {
   border-color: transparent transparent transparent var(--green);
 }
 
-.baysian-mm::before {
+.bayesian-mm::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -371,7 +371,7 @@ video {
   background-color: var(--green);
 }
 
-.baysian-mm-header {
+.bayesian-mm-header {
   background-color: var(--light-orange);
 }
 
@@ -411,7 +411,7 @@ video {
   color: var(--green);
 }
 
-.baysian-mm-span {
+.bayesian-mm-span {
   color: var(--light-orange);
 }
 
@@ -574,7 +574,7 @@ video {
     border-color: transparent var(--green) transparent transparent;
   }
 
-  .baysian-mm::before {
+  .bayesian-mm::before {
     left: 60px;
     border: medium solid var(--light-orange);
     border-width: 10px 10px 10px 0;
