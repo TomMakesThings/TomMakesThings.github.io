@@ -21,6 +21,40 @@
   <h1 class="title">Project Timeline</h1>
 
   <div class="timeline">
+    <div class="container left pyramid">
+      <h2 class="header pyramid-header">Joe's Pyramid Solver (2021)</h2>
+      <div class="content">
+        <p>Joe’s pyramid is a puzzle in which every stone is marked with a different one or two digit positive number.
+          Where a stone rests on two others, its number is the sum of the numbers marked on the two stones on which it rests.
+          The challenge is to find the value of the top stone X.</p>
+        <p>The puzzle is impossible to solve through brute force with 806 billion possible permutations for the lowest level alone.
+          However, marking each stone on this level with a, b, c, d, e, f, and using the constraint that
+          X = a + 5b + 10c + 10d + 5e + f, I was able to create a script to solve the puzzle programmatically.
+          <video autoplay muted loop>
+            <source src="Assets/Videos/Joes-Pyramid.mp4" type="video/mp4">
+          </video>
+        <p class="centered"><span class="pyramid-span">GitHub Repository (Private):</span></p>
+        <div class="centered-div">
+          <div class="icon-container">
+            <a href="https://github.com/TomMakesThings/Joes-Pyramid" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="Assets/Images/GitHub-Logo.png">
+              <p class="icon-text">Joes-Pyramid (TomMakesThings)</p>
+            </a>
+          </div>
+        </div>
+        <div class="centered">
+          <p class="centered"><span class="pyramid-span">Languages and Tools:</span></p>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/R-Logo.png">
+            <p>R</p>
+          </div>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/RStudio-Logo.png">
+            <p>RStudio</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container right stan-mm">
       <h2 class="header stan-mm-header">Stan Mixture Model (2021)</h2>
       <div class="content">
@@ -452,7 +486,9 @@
         <p>In this project, I experimented creating a basic optical character recognition (OCR) system that can take images of printed
           Sinhalese characters, Sinhala being the national language of Sri Lanka, and to convert them to machine readable text using a
           KNN classifier.</p>
-        <p><img src="Assets/Images/Sinhala.png" style="width: 100%; max-width: 480px;"></p>
+        <div class="centered">
+          <p><img src="Assets/Images/Sinhala.png" style="width: 100%; max-width: 480px;"></p>
+        </div>
         <p class="centered"><span class="sinhala-ocr-span">GitHub Repository: </span></p>
         <div class="centered-div">
           <div class="icon-container">

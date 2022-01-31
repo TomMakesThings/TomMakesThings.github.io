@@ -13,6 +13,7 @@
   --light-orange: #ff931f;
   --plasmid-pink: #fc495e;
   --bright-pink: #ff0df7;
+  --pyramid-yellow: #FFD966;
 }
 
 /** Custom fonts **/
@@ -353,6 +354,19 @@ video {
   border-color: transparent var(--stan-red) transparent transparent;
 }
 
+.pyramid::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--pyramid-yellow);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--pyramid-yellow);
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -415,6 +429,10 @@ video {
   background-color: var(--stan-red);
 }
 
+.pyramid-header {
+  background-color: var(--pyramid-yellow);
+}
+
 .obstacle-course-span {
   color: var(--light-blue);
 }
@@ -461,6 +479,10 @@ video {
 
 .stan-mm-span {
   color: var(--stan-red);
+}
+
+.pyramid-span {
+  color: var(--pyramid-yellow);
 }
 
 /* The actual content */
@@ -514,6 +536,10 @@ video {
 
 .plasmid {
   margin-bottom: -420px;
+}
+
+.pyramid {
+  margin-bottom: -100px;
 }
 
 .stan-mm {
