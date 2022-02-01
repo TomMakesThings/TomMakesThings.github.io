@@ -5,6 +5,7 @@
   --surrey-blue: #002868;
   --orange: #ff6608;
   --dark-blue: #0505FF;
+  --ga-blue: #B4C7E7;
   --purple: #4100BD;
   --red: #ED1515;
   --green: #3CA811;
@@ -290,6 +291,19 @@ video {
   border-color: transparent transparent transparent var(--bright-pink);
 }
 
+.ga-nn::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--ga-blue);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--ga-blue) transparent transparent;
+}
+
 .genre-predictor::before {
   content: " ";
   height: 0;
@@ -423,6 +437,10 @@ video {
   background-color: var(--bright-pink);
 }
 
+.ga-nn-header {
+  background-color: var(--ga-blue);
+}
+
 .genre-predictor-header {
   background-color: var(--red);
 }
@@ -477,6 +495,10 @@ video {
 
 .nsga-ii-span {
   color: var(--bright-pink);
+}
+
+.-span {
+  color: var(--ga-blue);
 }
 
 .genre-predictor-span {
@@ -693,6 +715,13 @@ video {
     border: medium solid var(--bright-pink);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--bright-pink) transparent transparent;
+  }
+
+  .ga-nn::before {
+    left: 60px;
+    border: medium solid var(--ga-blue);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--ga-blue) transparent transparent;
   }
 
   .genre-predictor::before {
