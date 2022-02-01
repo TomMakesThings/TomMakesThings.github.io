@@ -13,7 +13,8 @@
   --light-orange: #ff931f;
   --plasmid-pink: #fc495e;
   --bright-pink: #ff0df7;
-  --pyramid-yellow: #FFD966;
+  --pyramid-yellow: #ffd966;
+  --magic-green: #a5c246;
 }
 
 /** Custom fonts **/
@@ -367,6 +368,19 @@ video {
   border-color: transparent transparent transparent var(--pyramid-yellow);
 }
 
+.magic-19::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--magic-green);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--magic-green) transparent transparent;
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -433,6 +447,10 @@ video {
   background-color: var(--pyramid-yellow);
 }
 
+.magic-19-header {
+  background-color: var(--magic-green);
+}
+
 .obstacle-course-span {
   color: var(--light-blue);
 }
@@ -483,6 +501,10 @@ video {
 
 .pyramid-span {
   color: var(--pyramid-yellow);
+}
+
+.magic-19-span {
+  color: var(--magic-green);
 }
 
 /* The actual content */
@@ -538,11 +560,15 @@ video {
   margin-bottom: -420px;
 }
 
+.stan-mm {
+  margin-bottom: -760px;
+}
+
 .pyramid {
   margin-bottom: -100px;
 }
 
-.stan-mm {
+.magic-19 {
   margin-bottom: -760px;
 }
 
@@ -702,6 +728,20 @@ video {
     border: medium solid var(--stan-red);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--stan-red) transparent transparent;
+  }
+
+  .pyramid::before {
+    left: 60px;
+    border: medium solid var(--pyramid-yellow);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--pyramid-yellow) transparent transparent;
+  }
+
+  .magic-19::before {
+    left: 60px;
+    border: medium solid var(--magic-green);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--magic-green) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
