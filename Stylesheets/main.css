@@ -16,6 +16,7 @@
   --bright-pink: #ff0df7;
   --pyramid-yellow: #ffd966;
   --magic-green: #a5c246;
+  --hmm-grey: #616161;
 }
 
 /** Custom fonts **/
@@ -395,6 +396,19 @@ video {
   border-color: transparent var(--magic-green) transparent transparent;
 }
 
+.gsa-hmm::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--hmm-grey);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--hmm-grey);
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -469,6 +483,10 @@ video {
   background-color: var(--magic-green);
 }
 
+.gsa-hmm-header {
+  background-color: var(--hmm-grey);
+}
+
 .obstacle-course-span {
   color: var(--light-blue);
 }
@@ -495,6 +513,10 @@ video {
 
 .nsga-ii-span {
   color: var(--bright-pink);
+}
+
+.ga-nn-span {
+  color: var(--ga-blue);
 }
 
 .-span {
@@ -527,6 +549,10 @@ video {
 
 .magic-19-span {
   color: var(--magic-green);
+}
+
+.gsa-hmm-span {
+  color: var(--hmm-grey);
 }
 
 /* The actual content */
@@ -592,6 +618,10 @@ video {
 
 .magic-19 {
   margin-bottom: -760px;
+}
+
+.gsa-hmm {
+  margin-bottom: -180px;
 }
 
 .icon-container {
@@ -771,6 +801,13 @@ video {
     border: medium solid var(--magic-green);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--magic-green) transparent transparent;
+  }
+
+  .gsa-hmm::before {
+    left: 60px;
+    border: medium solid var(--hmm-grey);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--hmm-grey) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
