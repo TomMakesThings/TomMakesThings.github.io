@@ -24,12 +24,16 @@
     <div class="container left gsa-hmm">
       <h2 class="header gsa-hmm-header">Genome Sequence Analysis with a Hidden Markov Model (2022)</h2>
       <div class="content">
-        <p>Hidden Markov models are statistical models able to capture hidden information from observable sequences.
-          During this project, I created an HMM from scratch in Python.
-          The Baum-Welch and Viterbi algorithms implemented and applied to model the genome of <i>S. cerevisiae</i> chromosome III and annotate coding regions of DNA.
-          <div class="centered">
-            <p><img src="Assets/Images/HMM-Chromosome-Emission.png" style="width: 100%; max-width: 600px;"></p>
-          </div>
+        <p>To annotate coding regions of DNA in <i>S. cerevisiae</i> chromosome III,
+          a Hidden Markov model (HMM) was implemented from scratch to model %GC across regions of the genome.
+          Model parameters were estimated via the Baum-Welch algorithm.
+          This allowed coding and non-coding regions to be inferred through estimating the
+          most probable sequence of hidden states via the Viterbi algorithm.</p>
+          <p>The HMM annotations are fairly accurate, with the model able to identify
+          the high %GC telomeric region and the rough location of genes and pseudogenes.</p>
+          <video autoplay muted loop>
+            <source src="Assets/Videos/HMM.mp4" type="video/mp4">
+          </video>
         <p class="centered"><span class="gsa-hmm-span">GitHub Repository:</span></p>
         <div class="centered-div">
           <div class="icon-container">
@@ -121,8 +125,10 @@
     <div class="container right stan-mm">
       <h2 class="header stan-mm-header">Stan Mixture Model (2021)</h2>
       <div class="content">
-        <p>During a research internship, I made a prototype for a new mixture model to detect differential expression in scRNA-seq data.
-        For this I used Stan's automatic variational inference algorithm to model the posterior distribution of inter-individual differences from the grand means of genes.</p>
+        <p>During a research internship, I made a prototype for a new mixture model to
+          detect differential expression in scRNA-seq data.
+        For this I used Stan's automatic variational inference algorithm to model
+        the posterior distribution of inter-individual differences from the grand means of genes.</p>
         <video autoplay muted loop>
           <source src="Assets/Videos/Stan-Mixture-Model.mp4" type="video/mp4">
         </video>
@@ -155,12 +161,18 @@
     <div class="container left plasmid">
       <h2 class="header plasmid-header">PseudobuLk and Single cell Mixture models for Investigating Differential expression (PLASMID) (2021)</h2>
       <div class="content">
-        <p>During an internship, I worked in collaboration with UK DIR Imperial College London to benchmark pseudobulk, pseudoreplicate
-          and mixture model methods for identifying differentially expressed genes in microglia.</p>
-        <p>My contribution was creating PLASMID - a parallelizable Snakemake pipeline to run multiple differential expression methods and their variations (41 in total), given input scRNA-seq data.
-          Supported methods include: DESeq2, edgeR, limma, Welch and Wilcoxon t-tests, MAST and NEBULA.</p>
-        <p>After running each method, log fold-change and adjusted p-values are outputted and the results visualised through custom built interactive graphs.
-          These allow a user to visually identify up and down regulated genes and compare the methods against an expected ground truth.</p>
+        <p>During an internship, I worked in collaboration with UK DIR Imperial College London
+          on an ongoing project to robustly detect irregularities in microglia gene expression in Alzheimer’s patients.
+          It is hoped this work can provide guidance for other researchers to reduce FDR in scRNA-seq differential
+          expression analysis.</p>
+        <p>My contribution was creating PLASMID - a parallelizable Snakemake pipeline to benchmark
+          pseudobulk, pseudoreplicate and mixture model differential expression methods.
+          Supported methods include: DESeq2, edgeR, limma, Welch and Wilcoxon t-tests, MAST and NEBULA.
+          By testing different parameter combinations, this gives 41 total variants.</p>
+        <p>After running each method, log fold-change and adjusted p-values are outputted and the results visualised
+          through custom built interactive graphs.
+          These allow a user to visually identify up and down regulated genes and compare the methods against an
+          expected ground truth.</p>
         <video autoplay muted loop>
           <source src="Assets/Videos/PLASMID.mp4" type="video/mp4">
         </video>
@@ -211,10 +223,11 @@
     <div class="container right bayesian-mm">
       <h2 class="header bayesian-mm-header">Bayesian Mixture Model For scRNA-seq Clustering (2021)</h2>
       <div class="content">
-        <p>During a research internship, I helped test a novel Bayesian mixture model for clustering scRNA-seq data.
+        <p>During a research internship, I helped test a novel Bayesian mixture model for clustering scRNA-seq data
+          from mouse cortex and hippocampus, with the aim of identifying cell type markers in an interpretable way.
           This involved:</p>
         <ul>
-          <li>Creating graphs to detect patterns of average gene expression in clusters</li>
+          <li>Creating interactive graphs to detect patterns of mean gene expression in clusters</li>
           <li>Assisting development of the Snakemake pipeline</li>
           <li>Code documentation</li>
         </ul>
@@ -268,8 +281,12 @@
     <div class="container left clustering-tda">
       <h2 class="header clustering-tda-header">Clustering and Topological Data Analysis of Single-Cell RNA Sequencing Data (2020 - 2021)</h2>
       <div class="content">
-        <p>For my undergraduate final year project, I experimented with various dimensionality reduction techniques including autoencoders, clustering methods and the Mapper algorithm to identify sub-populations in real and simulated scRNA-seq datasets.
-          For one dataset, I assigned cells to the correct cell line with 99.9% accuracy, a result significantly higher than the original research paper.
+        <p>For my Computer Science undergraduate final year project, I identified sub-populations
+          of cells in scRNA-seq data dervied from lung adenocarcinoma, mouse cortex/hippocampus and simulated data.
+          To do this, I experimented with various dimensionality reduction techniques including autoencoders and
+          clustering methods.
+          As a further exploration tool, I performed topological data analysis using the Mapper algorithm which revealed
+          a detectable difference between real and simulated data.
         </p>
         <video autoplay muted loop controls>
           <source src="Assets/Videos/Clustering-TDA.mp4" type="video/mp4">
@@ -334,9 +351,10 @@
     <div class="container right genre-predictor">
       <h2 class="header genre-predictor-header">IMDb Movie Genre Predictor (2021)</h2>
       <div class="content">
-        <p>In a natural language processing (NLP) group project, I tested different NLP techniques and model architectures to create a CI/CD pipeline to train and deploy a multi-label classifier.
-          The classifier was trained on a dataset of movie descriptions to predict the top fitting genre(s) with 12 possible values including: Drama, Comedy, Action, Crime, Thriller, Romance, Horror, Adventure, Mystery, Family, Fantasy and Sci-Fi.
-          The state of the best trained model was then saved to file and deployed on a custom built web server.</p>
+        <p>In a natural language processing (NLP) group project, I tested different NLP techniques and model
+          architectures to create a CI/CD pipeline to train and deploy a multi-label classifier.
+          The classifier was trained on a dataset of movie descriptions to predict the top fitting genre(s) from 12 options.
+          The state of the best model was saved to file and deployed on a custom built web server.</p>
         <video autoplay muted loop>
           <source src="Assets/Videos/Movie-Genre-Predictor.mp4" type="video/mp4">
         </video>
@@ -390,13 +408,13 @@
     <div class="container left ecg-classifier">
       <h2 class="header ecg-classifier-header">Semi-Supervised Learning with TCNs for ECG Classification (2021)</h2>
       <div class="content">
-        <p>I managed a degree project in which we experimented using a new semi-supervised learning approach to identify arrhythmia (a type of heart
+        <p>A degree project I managed in which we experimented using a new semi-supervised learning approach to identify arrhythmia (a type of heart
           condition) from ECG time-series data.</p>
-        <p>First we applied k-means clustering to create new labels for each ECG, and then used them to train a temporal convolutional network (TCN).
+        <p>We applied k-means clustering to create new labels for each ECG and used them to train a temporal convolutional network (TCN).
           Then we employed transfer learning to create a new network for classifying the original arrhythmia labels.</p>
-        <p>Though unfortunately transferring network weights did not make a significant difference compared to training the network without, we still
-          consider the project a success:
-          Our final model achieved 97% accuracy demonstrating TCNs are much more suitable for time series ECGs than CNNs or LSTMs as used in previous literature.
+        <p>While transferring network weights did not make a significant difference compared to training the network without,
+          our final model achieved 97% accuracy demonstrating a simple TCN architecture is just as, if not more suitable for time series ECGs than many
+          highly optimized CNN or LSTM architectures published in literature at the time.
           </p>
         <video autoplay muted loop>
           <source src="Assets/Videos/ECG-Classifier.mp4" type="video/mp4">
@@ -445,9 +463,13 @@
       </div>
     </div>
     <div class="container right ga-nn">
-      <h2 class="header ga-nn-header">Optimising a Neural Network Using a Genetic Algorithm (2020)</h2>
+      <h2 class="header ga-nn-header">Genetic Algorithm for Neural Network Weight Optimisation (2020)</h2>
       <div class="content">
-        <p>A computational intelligence project to train a feed-forward multi-layer perceptron network with a genetic algorithm to approximate a function.</p>
+        <p>The aim is to train a feed-forward, multi-layer perceptron to approximate the function
+          y = sin(2x&#8321; + 2) + cos(0.5x&#8322;) + 0.5, given that x&#8321;, x&#8322; &isinv; [0, &pi;].
+          To optimize the network's weights, a genetic algorithm was implemented as the optimization algorithm.
+          To aid convergence, local learning via Rprop was applied using approaches inspired by Lamarckian and
+          Baldwinian models of evolution.</p>
         <p><img src="Assets/Images/Computational-Intelligence-NN.png" width="100%"></p>
         <p class="centered"><span class="ga-nn-span">GitHub Repository:</span></p>
         <div class="centered-div">
@@ -480,9 +502,11 @@
       </div>
     </div>
     <div class="container left nsga-ii">
-      <h2 class="header nsga-ii-header">NSGA-II (2020)</h2>
+      <h2 class="header nsga-ii-header">Non-Dominated Sorting Genetic Algorithm (NSGA-II) (2020)</h2>
       <div class="content">
-        <p>A computational intelligence project to solve a multi-objective optimisation problem using the elitist non-dominated sorting genetic algorithm (NSGA-II).</p>
+        <p>Given two functions f&#8321; and f&#8322;, and the task to find min{f&#8321;, f&#8322;},
+          an elitist NSGA-II was implemented to find the optimal candidates for x&#8321; x&#8322; x&#8323;
+          which satisfy this multi-objective optimisation problem.</p>
         <video autoplay muted loop style="max-width: 400px;">
           <source src="Assets/Videos/NSGA-II.mp4" type="video/mp4">
         </video>
@@ -547,8 +571,7 @@
       <h2 class="header sinhala-ocr-header">Sinhala Script Optical Character Recognition (2020)</h2>
       <div class="content">
         <p>In this project, I experimented creating a basic optical character recognition (OCR) system that can take images of printed
-          Sinhalese characters, Sinhala being the national language of Sri Lanka, and to convert them to machine readable text using a
-          KNN classifier.</p>
+          Sinhalese characters and to convert them to machine readable text using a KNN classifier.</p>
         <div class="centered">
           <p><img src="Assets/Images/Sinhala.png" style="width: 100%; max-width: 480px;"></p>
         </div>
@@ -647,8 +670,7 @@
     <div class="container left wrench-mask">
       <h2 class="header wrench-mask-header">Bluetooth Controlled Wrench Mask (2018 - 2019)</h2>
       <div class="content">
-        <p>Wrench is one of the main characters from the game Watch Dogs 2.
-          As a fun project, I created a real (and unique) version of his light up mask using an Arduino UNO.
+        <p>As a fun project, I created a unique, real life version Wrench's light up mask (from Watch Dogs 2) using an Arduino UNO.
           The LED matricies are controllable over bluetooth by a custom made Android application.</p>
         <video autoplay muted loop>
           <source src="Assets/Videos/App-Connection.mov" type="video/mp4">
@@ -689,11 +711,10 @@
       </div>
     </div>
     <div class="container right obstacle-course">
-      <h2 class="header obstacle-course-header">Stick Figure Obstacle Course (2017 - 2018)</h2>
+      <h2 class="header obstacle-course-header">Genetic Algorithm Stick Figure Obstacle Course Solver (2017 - 2018)</h2>
       <div class="content">
-        <p>For my A level computer science project, I created a custom genetic algorithm (a type of heuristic search algorithms inspired by natural selection).
-          When run, a population of animated stick figures are displayed on a Tkinter GUI.
-          Over generations they are optimised to improve at navigating obstacles including: spikes, pits, and caves.</p>
+        <p>For my A level Computer Science project, I designed a genetic algorithm (a heuristic search algorithm inspired by
+          natural selection) that over time allows a population of stick figures to learn to solve an obstical course.</p>
         <video autoplay muted loop>
           <source src="Assets/Videos/Stick-Figure.mp4" type="video/mp4">
         </video>
