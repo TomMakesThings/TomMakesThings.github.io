@@ -19,6 +19,7 @@
   --hmm-grey: #616161;
   --hopfield-pink: #de68ea;
   --phylogenetic-orange: #F9972B;
+  --wright-fisher-purple: #A45EE4;
 }
 
 /** Custom fonts **/
@@ -437,6 +438,19 @@ video {
   border-color: transparent transparent transparent var(--phylogenetic-orange);
 }
 
+.wright-fisher::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--wright-fisher-purple);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--wright-fisher-purple) transparent transparent;
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -523,6 +537,10 @@ video {
   background-color: var(--phylogenetic-orange);
 }
 
+.wright-fisher-header {
+  background-color: var(--wright-fisher-purple);
+}
+
 .obstacle-course-span {
   color: var(--light-blue);
 }
@@ -599,6 +617,10 @@ video {
   color: var(--phylogenetic-orange);
 }
 
+.wright-fisher-span {
+  color: var(--wright-fisher-purple);
+}
+
 /* The actual content */
 .content {
   padding: 3px 20px;
@@ -633,15 +655,15 @@ video {
 }
 
 .ecg-classifier {
-  margin-bottom: -650px;
+  margin-bottom: -770px;
 }
 
 .genre-predictor {
-  margin-bottom: -540px;
+  margin-bottom: -450px;
 }
 
 .clustering-tda {
-  margin-bottom: -500px;
+  margin-bottom: -550px;
 }
 
 .bayesian-mm {
@@ -673,7 +695,11 @@ video {
 }
 
 .phylogenetic-tree {
-  margin-bottom: -420px;
+  margin-bottom: -410px;
+}
+
+.wright-fisher {
+  margin-bottom: -440px;
 }
 
 .icon-container {
@@ -862,7 +888,7 @@ video {
     border-color: transparent var(--hopfield-pink) transparent transparent;
   }
 
-  .gsa-hmm::before {
+  .-hmm::before {
     left: 60px;
     border: medium solid var(--hmm-grey);
     border-width: 10px 10px 10px 0;
@@ -874,6 +900,13 @@ video {
     border: medium solid var(--phylogenetic-orange);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--phylogenetic-orange) transparent transparent;
+  }
+
+  .wright-fisher::before {
+    left: 60px;
+    border: medium solid var(--wright-fisher-purple);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--wright-fisher-purple) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
