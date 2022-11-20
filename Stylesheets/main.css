@@ -17,6 +17,8 @@
   --pyramid-yellow: #ffd966;
   --magic-green: #a5c246;
   --hmm-grey: #616161;
+  --hopfield-pink: #de68ea;
+  --phylogenetic-orange: #F9972B;
 }
 
 /** Custom fonts **/
@@ -396,7 +398,7 @@ video {
   border-color: transparent var(--magic-green) transparent transparent;
 }
 
-.gsa-hmm::before {
+.hopfield::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -404,9 +406,35 @@ video {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid var(--hmm-grey);
+  border: medium solid var(--hopfield-pink);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--hmm-grey);
+  border-color: transparent transparent transparent var(--hopfield-pink);
+}
+
+.gsa-hmm::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--hmm-grey);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--hmm-grey) transparent transparent;
+}
+
+.phylogenetic-tree::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--phylogenetic-orange);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--phylogenetic-orange);
 }
 
 /* Fix the circle for containers on the right side */
@@ -483,8 +511,16 @@ video {
   background-color: var(--magic-green);
 }
 
+.hopfield-header {
+  background-color: var(--hopfield-pink);
+}
+
 .gsa-hmm-header {
   background-color: var(--hmm-grey);
+}
+
+.phylogenetic-tree-header {
+  background-color: var(--phylogenetic-orange);
 }
 
 .obstacle-course-span {
@@ -551,8 +587,16 @@ video {
   color: var(--magic-green);
 }
 
+.hopfield-span {
+  color: var(--hopfield-pink);
+}
+
 .gsa-hmm-span {
   color: var(--hmm-grey);
+}
+
+.phylogenetic-tree-span {
+  color: var(--phylogenetic-orange);
 }
 
 /* The actual content */
@@ -605,7 +649,7 @@ video {
 }
 
 .plasmid {
-  margin-bottom: -420px;
+  margin-bottom: -490px;
 }
 
 .stan-mm {
@@ -620,8 +664,16 @@ video {
   margin-bottom: -760px;
 }
 
+.hopfield {
+  margin-bottom: -200px;
+}
+
 .gsa-hmm {
-  margin-bottom: -180px;
+  margin-bottom: -470px;
+}
+
+.phylogenetic-tree {
+  margin-bottom: -420px;
 }
 
 .icon-container {
@@ -803,11 +855,25 @@ video {
     border-color: transparent var(--magic-green) transparent transparent;
   }
 
+  .hopfield::before {
+    left: 60px;
+    border: medium solid var(--hopfield-pink);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--hopfield-pink) transparent transparent;
+  }
+
   .gsa-hmm::before {
     left: 60px;
     border: medium solid var(--hmm-grey);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--hmm-grey) transparent transparent;
+  }
+
+  .phylogenetic-tree::before {
+    left: 60px;
+    border: medium solid var(--phylogenetic-orange);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--phylogenetic-orange) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */

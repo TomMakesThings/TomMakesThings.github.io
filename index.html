@@ -20,17 +20,53 @@
 
   <h1 class="title">Project Timeline</h1>
 
+
+
   <div class="timeline">
-    <div class="container left gsa-hmm">
+    <div class="container left phylogenetic-tree">
+      <h2 class="header phylogenetic-tree-header">Phylogenetic Tree Inference (2022)</h2>
+      <div class="content">
+        <p>The goal of this project was to find the optimal mutation rate or single nucleotide polymorphism (SNP)
+          assignments of an evolutionary tree.
+          In this model, the evolutionary tree is assumed to follow the Jukes-Cantor model of DNA sequence evolution.
+          Felsenstein’s pruning algorithm is applied to compute the likelihood of the tree from the terminal taxa's nucleotides.
+          Maximising the log likelihood by testing different parameters allows the most likely mutation rate or SNPs to be determined.</p>
+          <video autoplay muted loop>
+            <source src="Assets/Videos/Evolutionary-Tree.mp4" type="video/mp4">
+          </video>
+        <p class="centered"><span class="gsa-hmm-span">GitHub Repository:</span></p>
+        <div class="centered-div">
+          <div class="icon-container">
+            <a href="https://github.com/TomMakesThings/Phylogenetic-Tree-Inference/tree/main" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="Assets/Images/GitHub-Logo.png">
+              <p class="icon-text">Phylogenetic-Tree-Inference (TomMakesThings)</p>
+            </a>
+          </div>
+        </div>
+        <div class="centered">
+          <p class="centered"><span class="gsa-hmm-span">Languages and Tools:</span></p>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/Python-Logo.png">
+            <p>Python</p>
+          </div>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/Jupyter-Logo.png">
+            <p>Jupyter Notebook</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container right gsa-hmm">
       <h2 class="header gsa-hmm-header">Genome Sequence Analysis with a Hidden Markov Model (2022)</h2>
       <div class="content">
-        <p>To annotate coding regions of DNA in <i>S. cerevisiae</i> chromosome III,
-          a Hidden Markov model (HMM) was implemented from scratch to model %GC across regions of the genome.
+        <p>To annotate coding regions of DNA in S. cerevisiae chromosome III, a Hidden Markov model (HMM)
+          was implemented from scratch to model %GC across regions of the genome.
           Model parameters were estimated via the Baum-Welch algorithm.
-          This allowed coding and non-coding regions to be inferred through estimating the
-          most probable sequence of hidden states via the Viterbi algorithm.</p>
-          <p>The HMM annotations are fairly accurate, with the model able to identify
-          the high %GC telomeric region and the rough location of genes and pseudogenes.</p>
+          This allowed coding and non-coding regions to be inferred through estimating the most probable
+          sequence of hidden states via the Viterbi algorithm.</p>
+        <p>The HMM annotations are fairly accurate, with the model able to identify the high %GC telomeric
+          region and the rough location of genes and pseudogenes.</p>
           <video autoplay muted loop>
             <source src="Assets/Videos/HMM.mp4" type="video/mp4">
           </video>
@@ -56,6 +92,39 @@
         </div>
       </div>
     </div>
+
+    <div class="container left hopfield">
+      <h2 class="header hopfield-header">Hopfield Network (2021)</h2>
+      <div class="content">
+        <p>In this work, a Hopfield network was created for simple pattern recognition.
+          It was then evaluated by its capacity to recall patterns using either the Hebbian or Storkey learning rules,
+          demonstrating that Storkey learning allows the network to retain a higher capacity.</p>
+          <div class="centered">
+            <p><img src="Assets/Images/Hopfield-Network.png" style="width: 100%; max-width: 600px;"></p>
+          </div>
+        <p class="centered"><span class="gsa-hmm-span">GitHub Repository:</span></p>
+        <div class="centered-div">
+          <div class="icon-container">
+            <a href="https://github.com/TomMakesThings/Hopfield-Network" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="Assets/Images/GitHub-Logo.png">
+              <p class="icon-text">Hopfield-Network (TomMakesThings)</p>
+            </a>
+          </div>
+        </div>
+        <div class="centered">
+          <p class="centered"><span class="gsa-hmm-span">Languages and Tools:</span></p>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/Python-Logo.png">
+            <p>Python</p>
+          </div>
+          <div class="tool-container">
+            <img class="tool-logo" src="Assets/Images/Jupyter-Logo.png">
+            <p>Jupyter Notebook</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container right magic-19">
       <h2 class="header magic-19-header">Solving the Magic 19 Puzzle through Simulated Annealing (2021)</h2>
       <div class="content">
@@ -88,6 +157,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left pyramid">
       <h2 class="header pyramid-header">Joe's Pyramid Solver (2021)</h2>
       <div class="content">
@@ -122,8 +192,9 @@
         </div>
       </div>
     </div>
+
     <div class="container right stan-mm">
-      <h2 class="header stan-mm-header">Stan Mixture Model (2021)</h2>
+      <h2 class="header stan-mm-header">Stan Differential Expression Mixture Model (2021)</h2>
       <div class="content">
         <p>During a research internship, I made a prototype for a new mixture model to
           detect differential expression in scRNA-seq data.
@@ -158,6 +229,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left plasmid">
       <h2 class="header plasmid-header">PseudobuLk and Single cell Mixture models for Investigating Differential expression (PLASMID) (2021)</h2>
       <div class="content">
@@ -220,6 +292,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right bayesian-mm">
       <h2 class="header bayesian-mm-header">Bayesian Mixture Model For scRNA-seq Clustering (2021)</h2>
       <div class="content">
@@ -278,6 +351,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left clustering-tda">
       <h2 class="header clustering-tda-header">Clustering and Topological Data Analysis of Single-Cell RNA Sequencing Data (2020 - 2021)</h2>
       <div class="content">
@@ -348,6 +422,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right genre-predictor">
       <h2 class="header genre-predictor-header">IMDb Movie Genre Predictor (2021)</h2>
       <div class="content">
@@ -405,6 +480,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left ecg-classifier">
       <h2 class="header ecg-classifier-header">Semi-Supervised Learning with TCNs for ECG Classification (2021)</h2>
       <div class="content">
@@ -462,6 +538,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right ga-nn">
       <h2 class="header ga-nn-header">Genetic Algorithm for Neural Network Weight Optimisation (2020)</h2>
       <div class="content">
@@ -501,6 +578,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left nsga-ii">
       <h2 class="header nsga-ii-header">Non-Dominated Sorting Genetic Algorithm (NSGA-II) (2020)</h2>
       <div class="content">
@@ -536,6 +614,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right vigenere-cracker">
       <h2 class="header vigenere-cracker-header">Vigenère Cipher Cracker (2020)</h2>
       <div class="content">
@@ -567,6 +646,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left sinhala-ocr">
       <h2 class="header sinhala-ocr-header">Sinhala Script Optical Character Recognition (2020)</h2>
       <div class="content">
@@ -605,6 +685,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right subs">
       <h2 class="header subs-header">SUBS web application (2020)</h2>
       <div class="content">
@@ -667,6 +748,7 @@
         </div>
       </div>
     </div>
+
     <div class="container left wrench-mask">
       <h2 class="header wrench-mask-header">Bluetooth Controlled Wrench Mask (2018 - 2019)</h2>
       <div class="content">
@@ -710,6 +792,7 @@
         </div>
       </div>
     </div>
+
     <div class="container right obstacle-course">
       <h2 class="header obstacle-course-header">Genetic Algorithm Stick Figure Obstacle Course Solver (2017 - 2018)</h2>
       <div class="content">
