@@ -58,11 +58,12 @@
     <div class="container right wright-fisher">
       <h2 class="header wright-fisher-header">Haploid and Diploid Wright-Fisher Simulator (2022)</h2>
       <div class="content">
-        <p>I designed a simulator to test the effects of selection, recombination and linkage disequilibrium (LD)
-          on haploid and diploid versions of the Wright-Fisher model of genetic drift.</p>
+        <p>To test the effects of selection, recombination and linkage disequilibrium (LD)
+          on haploid and diploid versions of the Wright-Fisher model of genetic drift,
+          I designed a simulator in Python.</p>
           <p>For the haploid model, the simulator demonstrates that speed and rate of fixation
             of an allele in a population can be increased through positive selection.
-            For the diploid model, the simulator demonstrates how LD can be broken down faster with higher recombination and negative selection.</p>
+            While for the diploid model, it demonstrates how LD can be broken down faster with higher recombination and negative selection.</p>
           <!-- <video autoplay muted loop>
             <source src="Assets/Videos/HMM.mp4" type="video/mp4">
           </video> -->
@@ -92,11 +93,11 @@
     <div class="container left phylogenetic-tree">
       <h2 class="header phylogenetic-tree-header">Phylogenetic Tree Inference (2022)</h2>
       <div class="content">
-        <p>The goal of this project was to find the optimal mutation rate or single nucleotide polymorphism (SNP)
+        <p>The goal of this project was to find the optimal mutation rate (&mu;) or single nucleotide polymorphism (SNP)
           assignments of an evolutionary tree.
           In this model, the evolutionary tree is assumed to follow the Jukes-Cantor model of DNA sequence evolution.
           Felsenstein’s pruning algorithm is applied to compute the likelihood of the tree from the terminal taxa's nucleotides.
-          Maximising the log likelihood by testing different parameters allows the most likely mutation rate or SNPs to be determined.</p>
+          Maximising the log likelihood by testing different parameters allows the most likely &mu; or SNPs to be determined.</p>
           <video autoplay muted loop>
             <source src="Assets/Videos/Evolutionary-Tree.mp4" type="video/mp4">
           </video>
@@ -126,13 +127,13 @@
     <div class="container right gsa-hmm">
       <h2 class="header gsa-hmm-header">Genome Sequence Analysis with a Hidden Markov Model (2022)</h2>
       <div class="content">
-        <p>To annotate coding regions of DNA in S. cerevisiae chromosome III, a Hidden Markov model (HMM)
+        <p>To annotate coding regions of DNA in <em>S. cerevisiae</em> chromosome III, a Hidden Markov model (HMM)
           was implemented from scratch to model %GC across regions of the genome.
           Model parameters were estimated via the Baum-Welch algorithm.
-          This allowed coding and non-coding regions to be inferred through estimating the most probable
+          This allowed non-coding regions (state 0) and coding regions (state 1) to be inferred through estimating the most probable
           sequence of hidden states via the Viterbi algorithm.</p>
         <p>The HMM annotations are fairly accurate, with the model able to identify the high %GC telomeric
-          region and the rough location of genes and pseudogenes.</p>
+          region TEL03L, and the rough location of some pseudogenes and genes such as <em>YCL068C</em>.</p>
           <video autoplay muted loop>
             <source src="Assets/Videos/HMM.mp4" type="video/mp4">
           </video>
