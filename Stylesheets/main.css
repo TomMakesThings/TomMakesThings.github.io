@@ -20,6 +20,7 @@
   --hopfield-pink: #de68ea;
   --phylogenetic-orange: #F9972B;
   --wright-fisher-purple: #A45EE4;
+  --gillespie-blue: #1F87FF;
 }
 
 /** Custom fonts **/
@@ -451,6 +452,19 @@ video {
   border-color: transparent var(--wright-fisher-purple) transparent transparent;
 }
 
+.gillespie-mrna::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--gillespie-blue);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--gillespie-blue);
+}
+
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -16px;
@@ -541,6 +555,10 @@ video {
   background-color: var(--wright-fisher-purple);
 }
 
+.gillespie-mrna-header {
+  background-color: var(--gillespie-blue);
+}
+
 .obstacle-course-span {
   color: var(--light-blue);
 }
@@ -621,6 +639,10 @@ video {
   color: var(--wright-fisher-purple);
 }
 
+.gillespie-mrna-span {
+  color: var(--gillespie-blue);
+}
+
 /* The actual content */
 .content {
   padding: 3px 20px;
@@ -699,6 +721,10 @@ video {
 }
 
 .wright-fisher {
+  margin-bottom: -440px;
+}
+
+.gillespie-mrna {
   margin-bottom: -440px;
 }
 
@@ -888,7 +914,7 @@ video {
     border-color: transparent var(--hopfield-pink) transparent transparent;
   }
 
-  .-hmm::before {
+  .gsa-hmm::before {
     left: 60px;
     border: medium solid var(--hmm-grey);
     border-width: 10px 10px 10px 0;
@@ -907,6 +933,13 @@ video {
     border: medium solid var(--wright-fisher-purple);
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--wright-fisher-purple) transparent transparent;
+  }
+
+  .gillespie-mrna::before {
+    left: 60px;
+    border: medium solid var(--gillespie-blue);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--gillespie-blue) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
