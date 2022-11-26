@@ -21,6 +21,7 @@
   --phylogenetic-orange: #F9972B;
   --wright-fisher-purple: #A45EE4;
   --gillespie-blue: #1F87FF;
+  --cancer-evolution-purple: #8A2BE2;
 }
 
 /** Custom fonts **/
@@ -200,18 +201,13 @@ video {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid purple;
+  /* border: medium solid purple; */
   border-width: 10px 10px 10px 0;
-  border-color: transparent purple transparent transparent;
+  /* border-color: transparent purple transparent transparent; */
 }
 
 .obstacle-course::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--light-blue);
   border-width: 10px 10px 10px 0;
@@ -219,12 +215,7 @@ video {
 }
 
 .wrench-mask::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--dark-black);
   border-width: 10px 0 10px 10px;
@@ -232,12 +223,7 @@ video {
 }
 
 .subs::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--surrey-blue);
   border-width: 10px 10px 10px 0;
@@ -245,12 +231,7 @@ video {
 }
 
 .sinhala-ocr::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--gold);
   border-width: 10px 0 10px 10px;
@@ -258,12 +239,7 @@ video {
 }
 
 .vigenere-cracker::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--orange);
   border-width: 10px 10px 10px 0;
@@ -271,12 +247,7 @@ video {
 }
 
 .ecg-classifier::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--purple);
   border-width: 10px 0 10px 10px;
@@ -284,12 +255,7 @@ video {
 }
 
 .nsga-ii::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--bright-pink);
   border-width: 10px 0 10px 10px;
@@ -297,12 +263,7 @@ video {
 }
 
 .ga-nn::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--ga-blue);
   border-width: 10px 10px 10px 0;
@@ -310,12 +271,7 @@ video {
 }
 
 .genre-predictor::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--red);
   border-width: 10px 10px 10px 0;
@@ -323,12 +279,7 @@ video {
 }
 
 .clustering-tda::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--green);
   border-width: 10px 0 10px 10px;
@@ -336,12 +287,7 @@ video {
 }
 
 .bayesian-mm::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--light-orange);
   border-width: 10px 10px 10px 0;
@@ -349,12 +295,7 @@ video {
 }
 
 .plasmid::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--plasmid-pink);
   border-width: 10px 0 10px 10px;
@@ -362,12 +303,7 @@ video {
 }
 
 .stan-mm::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--stan-red);
   border-width: 10px 10px 10px 0;
@@ -375,12 +311,7 @@ video {
 }
 
 .pyramid::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--pyramid-yellow);
   border-width: 10px 0 10px 10px;
@@ -388,12 +319,7 @@ video {
 }
 
 .magic-19::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--magic-green);
   border-width: 10px 10px 10px 0;
@@ -401,12 +327,7 @@ video {
 }
 
 .hopfield::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
   border: medium solid var(--hopfield-pink);
   border-width: 10px 0 10px 10px;
@@ -414,54 +335,42 @@ video {
 }
 
 .gsa-hmm::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--hmm-grey);
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--hmm-grey) transparent transparent;
 }
 
-.phylogenetic-tree::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+.cancer-evolution::before {
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
-  border: medium solid var(--phylogenetic-orange);
+  border: medium solid var(--cancer-evolution-purple);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--phylogenetic-orange);
+  border-color: transparent transparent transparent var(--cancer-evolution-purple);
 }
 
 .wright-fisher::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
   border: medium solid var(--wright-fisher-purple);
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--wright-fisher-purple) transparent transparent;
 }
 
-.gillespie-mrna::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
+.phylogenetic-tree::before {
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   right: 30px;
-  border: medium solid var(--gillespie-blue);
+  border: medium solid var(--phylogenetic-orange);
   border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--phylogenetic-orange);
+}
+
+.gillespie-mrna::before {
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
+  left: 30px;
+  border: medium solid var(--gillespie-blue);
+  border-width: 10px 10px 10px 0;
   border-color: transparent transparent transparent var(--gillespie-blue);
 }
 
@@ -555,6 +464,10 @@ video {
   background-color: var(--wright-fisher-purple);
 }
 
+.cancer-evolution-header {
+  background-color: var(--cancer-evolution-purple);
+}
+
 .gillespie-mrna-header {
   background-color: var(--gillespie-blue);
 }
@@ -639,6 +552,10 @@ video {
   color: var(--wright-fisher-purple);
 }
 
+.cancer-evolution-span {
+  color: var(--cancer-evolution-purple);
+}
+
 .gillespie-mrna-span {
   color: var(--gillespie-blue);
 }
@@ -717,15 +634,19 @@ video {
 }
 
 .phylogenetic-tree {
-  margin-bottom: -410px;
+  margin-bottom: -520px;
 }
 
 .wright-fisher {
-  margin-bottom: -440px;
+  margin-bottom: -380px;
+}
+
+.cancer-evolution {
+  margin-bottom: -410px;
 }
 
 .gillespie-mrna {
-  margin-bottom: -440px;
+  margin-bottom: -330px;
 }
 
 .icon-container {
@@ -937,9 +858,9 @@ video {
 
   .gillespie-mrna::before {
     left: 60px;
-    border: medium solid var(--gillespie-blue);
+    border: medium solid var(--phylogenetic-orange);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--gillespie-blue) transparent transparent;
+    border-color: transparent var(--phylogenetic-orange) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
