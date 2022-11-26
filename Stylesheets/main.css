@@ -22,6 +22,7 @@
   --wright-fisher-purple: #A45EE4;
   --gillespie-blue: #1F87FF;
   --cancer-evolution-purple: #8A2BE2;
+  --metastatic-blue: #003E72;
 }
 
 /** Custom fonts **/
@@ -201,9 +202,9 @@ video {
   width: 0;
   z-index: 1;
   left: 30px;
-  /* border: medium solid purple; */
+  border: medium solid purple;
   border-width: 10px 10px 10px 0;
-  /* border-color: transparent purple transparent transparent; */
+  border-color: transparent purple transparent transparent;
 }
 
 .obstacle-course::before {
@@ -350,6 +351,14 @@ video {
   border-color: transparent transparent transparent var(--cancer-evolution-purple);
 }
 
+.metastatic-patterns::before {
+  content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
+  left: 30px;
+  border: medium solid var(--metastatic-blue);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--metastatic-blue) transparent transparent;
+}
+
 .wright-fisher::before {
   content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
   left: 30px;
@@ -371,7 +380,7 @@ video {
   left: 30px;
   border: medium solid var(--gillespie-blue);
   border-width: 10px 10px 10px 0;
-  border-color: transparent transparent transparent var(--gillespie-blue);
+  border-color: transparent var(--gillespie-blue) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -456,16 +465,20 @@ video {
   background-color: var(--hmm-grey);
 }
 
+.cancer-evolution-header {
+  background-color: var(--cancer-evolution-purple);
+}
+
+.metastatic-patterns-header {
+  background-color: var(--metastatic-blue);
+}
+
 .phylogenetic-tree-header {
   background-color: var(--phylogenetic-orange);
 }
 
 .wright-fisher-header {
   background-color: var(--wright-fisher-purple);
-}
-
-.cancer-evolution-header {
-  background-color: var(--cancer-evolution-purple);
 }
 
 .gillespie-mrna-header {
@@ -544,16 +557,20 @@ video {
   color: var(--hmm-grey);
 }
 
+.cancer-evolution-span {
+  color: var(--cancer-evolution-purple);
+}
+
+.metastatic-patterns-span {
+  color: var(--metastatic-blue);
+}
+
 .phylogenetic-tree-span {
   color: var(--phylogenetic-orange);
 }
 
 .wright-fisher-span {
   color: var(--wright-fisher-purple);
-}
-
-.cancer-evolution-span {
-  color: var(--cancer-evolution-purple);
 }
 
 .gillespie-mrna-span {
@@ -633,16 +650,20 @@ video {
   margin-bottom: -470px;
 }
 
+.cancer-evolution {
+  margin-bottom: -410px;
+}
+
+.metastatic-patterns {
+  margin-bottom: -370px;
+}
+
 .phylogenetic-tree {
-  margin-bottom: -520px;
+  margin-bottom: -370px;
 }
 
 .wright-fisher {
-  margin-bottom: -380px;
-}
-
-.cancer-evolution {
-  margin-bottom: -410px;
+  margin-bottom: -480px;
 }
 
 .gillespie-mrna {
@@ -842,6 +863,20 @@ video {
     border-color: transparent var(--hmm-grey) transparent transparent;
   }
 
+  .cancer-evolution::before {
+    left: 60px;
+    border: medium solid var(--cancer-evolution-purple);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--cancer-evolution-purple) transparent transparent;
+  }
+
+  .metastatic-patterns::before {
+    left: 60px;
+    border: medium solid var(--metastatic-blue);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--metastatic-blue) transparent transparent;
+  }
+
   .phylogenetic-tree::before {
     left: 60px;
     border: medium solid var(--phylogenetic-orange);
@@ -858,9 +893,9 @@ video {
 
   .gillespie-mrna::before {
     left: 60px;
-    border: medium solid var(--phylogenetic-orange);
+    border: medium solid var(--gillespie-blue);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--phylogenetic-orange) transparent transparent;
+    border-color: transparent var(--gillespie-blue) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
