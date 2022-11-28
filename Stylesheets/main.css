@@ -377,10 +377,10 @@ video {
 
 .gillespie-mrna::before {
   content: " "; height: 0; position: absolute; top: 22px; width: 0; z-index: 1;
-  left: 30px;
+  right: 30px;
   border: medium solid var(--gillespie-blue);
-  border-width: 10px 10px 10px 0;
-  border-color: transparent var(--gillespie-blue) transparent transparent;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--gillespie-blue);
 }
 
 /* Fix the circle for containers on the right side */
